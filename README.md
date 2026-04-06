@@ -43,3 +43,14 @@ Create a leaderboard with the top 10 users with the most tweets. Uses a Redis So
 ### Query 5 – User Tweet Index
 
 Create a structure that lets you get all the tweets for a specific user. Uses Redis Lists with keys like `tweets:screen_name` to store tweet IDs per user, and Redis Hashes with keys like `tweet:id` to store tweet data.
+
+## AI Disclosure
+
+This assignment was completed with the assistance of Claude Sonnet 4.6. The following prompts were used during development:
+
+- "Create the boilerplate for each query"
+- "Check my work and if it fulfils the rubric requirement"
+- "Generate a readme based off the queries and rubric"
+- "Create comments for each query detailing what it is"
+
+All AI-generated code and content was reviewed and validated for correctness.

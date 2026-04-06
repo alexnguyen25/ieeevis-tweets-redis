@@ -1,3 +1,8 @@
+// Query 1: How many tweets are there?
+// Initializes a tweetCount key to 0 in Redis (SET), queries all tweets from MongoDB,
+// and increments tweetCount by 1 for each tweet (INCR).
+// Finally gets the value (GET) and prints "There were ### tweets"
+
 import { MongoClient } from "mongodb";
 import { createClient } from "redis";
 

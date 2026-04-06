@@ -1,3 +1,8 @@
+// Query 3: How many distinct users are there in the dataset?
+// Uses a Redis Set called screen_names.
+// Adds each tweet's screen_name to the set (SADD) — duplicates are ignored automatically.
+// Gets the total count of unique users (SCARD) and prints it.
+
 import { MongoClient } from "mongodb";
 import { createClient } from "redis";
 

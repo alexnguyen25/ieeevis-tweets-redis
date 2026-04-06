@@ -1,3 +1,8 @@
+// Query 4: Who are the top 10 users with the most tweets?
+// Uses a Redis Sorted Set called leaderboard.
+// Increments each user's score by 1 for every tweet they post (ZINCRBY).
+// Gets the top 10 users ranked by score in descending order (ZRANGE REV) and prints the leaderboard.
+
 import { MongoClient } from "mongodb";
 import { createClient } from "redis";
 

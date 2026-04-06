@@ -1,3 +1,10 @@
+// Query 5: Get all tweets for a specific user.
+// Uses Redis Lists with keys like tweets:screen_name to store all tweet IDs per user (RPUSH).
+// Uses Redis Hashes with keys like tweet:id to store each tweet's data
+// including user_name, text, created_at, retweet_count, and favorite_count (HSET).
+// Demonstrates by fetching all tweet IDs for a specific user (LRANGE)
+// and retrieving each tweet's full data from its hash (HGETALL).
+
 import { MongoClient } from "mongodb";
 import { createClient } from "redis";
 
